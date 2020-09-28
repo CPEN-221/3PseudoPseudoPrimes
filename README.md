@@ -4,20 +4,20 @@ In this example, we will work with the `ArrayList` datatype to hold a variable a
 
 Let us define a number *n* to be a 3-pseudopseudoprime or a **probable-prime** if and only if the following conditions are satisfied: There exist two numbers *a* and *b* such that 1 < a < n and 1 < b < n; *a* is not equal to *b*; *a* and *b* are multiples of 3; and
 
-$$a^n~mod~n = a; ~~~~ b^n~mod~n = b.$$
+**a^n mod n = a and b^n mod n = b**
 
 Furthermore, *all prime numbers are definitely probable-primes*, which means that 2 and 5 are probable-primes.
 
 You are given a list of numbers and you need to identify the probable-primes in the list and return another list, *without duplicates*, with the probable-primes sorted in ascending order.
 
-$$a^n ~ mod~n = a$$
+**a^n mod n = a​**
 
 means that the remainder of *a* to the power of *n* divided by *n* is *a*. The `%` operator in Java helps in computing remainders.
 
 ```clike
 int a = 11;
 int b = 3;
-int x = a%b;
+int x = a % b;
 // x holds the remainder when we divide a by b; 
 // so x should hold the value 2
 ```
